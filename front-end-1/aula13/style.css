@@ -1,0 +1,57 @@
+img {
+    width: 260px;
+    border-radius: 40px;
+    
+
+}
+
+input, label {
+    color: white;
+    position: relative;
+    border-radius: 90;
+    border: 1px solid grey;
+    text-align: center;
+    
+}
+
+body{
+background: url(https://wallpaperaccess.com/full/13324.jpg) repeat center center fixed; background-color:#5c65ae
+}
+
+label {
+    position: relative;
+    cursor: pointer;
+    background: #422c44;
+    background-image: white;
+    border-radius: 40px;
+    font-family: Georgia;
+    color: #fcfcfc;
+    font-size: 16px;
+    text-decoration: none;
+  }
+
+.botao {
+    cursor: pointer;
+    background-color: transparent;
+    background-image: transparent;
+    -webkit-border-radius: 20;
+    -moz-border-radius: 20;
+    border-radius: 20px;    
+    font-family: Arial, Helvetica, sans-serif;
+    color: #ebe6e6;
+    font-size: 30px;
+    margin-top: 10px;
+    padding: 10px 20px 10px 20px;
+    text-decoration: none;
+}
+
+.form {
+    width: 100vw;
+    height: 100vh;
+    background: transparent;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+
+}
