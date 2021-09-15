@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+
+</head>
+<body>
+
+    <div class="form">
+        <form action="">
+
+            <img class="logo" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSsgbflw8gZlOUGBtFnemYDK4X2OJSerggWfw&usqp=CAU">
+
+            <fieldset>
+                <div>
+                <legend>Dados Pessoais</legend>
+
+                <label for="cadastro">Nome</label>
+                <input type="name" name ="name" id="name" placeholder="Digite o seu nome">
+                </div>
+                
+                <div>
+                <label for="cadastro">E-mail</label>
+                <input type="text" name ="e-mail" id="e-mail" placeholder="seuemail@email.com">
+                </div>
+        
+                <div>
+                <label for="cpf">CPF</label>
+                <input type="number" name="socialNumber" id="socialNumber">
+                </div>
+        
+                <div>
+                <label for="cpf">Data de nascimento</label>
+                <input type="date" name="birthDate" id="birthDate">
+                </div>
+
+            </fieldset>
+
+            <fieldset>
+                <legend> Pedido</legend>
+            
+                <div>
+                <label class="teste" for="pedido">Tipo de Pedido</label>
+                </div>
+                <div class=chose>
+                <input type="radio" name ="option" id="option">
+                <label for="option">Pedido sob encomenda</label>
+                <input type="radio" name ="option" id="option">
+                <label for="option">Pedido do estoque</label>
+                </div>
+
+                <div>
+                <input class="coment" type="checkbox" id="person" name="person" value="Ciente">
+                <label for="pedido"></label>Estou ciente que itens sob encomenda tem acréscimo de 15 dias ao prazo de entrega</p></label>
+                </div>
+
+                <div class=sku>
+                <label class="insert" for="">Cole aqui os SKUs de seu pedido</label>
+                <div>
+                <textarea name="" id="" cols="30" rows="10"></textarea>
+                </div>
+
+
+
+            </div>
+            </fieldset>
+
+            <fieldset>
+            <legend>Localização para Entrega</legend>
+
+            <div>
+                <label for="cidade"></label>
+                <select name="state" id="state">
+                    <optgroup label="Sul">
+                        <option value="1">São Paulo</option>
+                        <option value="2">Campinas</option>
+                        <option value="3">São Roque</option>
+                        <option value="4">São Roque</option>
+                    </optgroup>
+                    <optgroup label="Norte">
+                        <option value="1">São Paulo</option>
+                        <option value="2">Campinas</option>
+                        <option value="3">São Roque</option>
+                        <option value="4">São Roque</option>
+                    </optgroup>
+                    <optgroup label="Oeste">
+                        <option value="1">São Paulo</option>
+                        <option value="2">Campinas</option>
+                        <option value="3">São Roque</option>
+                        <option value="4">São Roque</option>
+                    </optgroup>
+                    <optgroup label="Leste">
+                        <option value="1">São Paulo</option>
+                        <option value="2">Campinas</option>
+                        <option value="3">São Roque</option>
+                        <option value="4">São Roque</option>
+                    </optgroup>
+                    </select>
+            </fieldset>
+
+            <fieldset>
+                <div>
+                <legend>Pagamento</legend>
+                <input type="radio" name ="option" id="option">
+                <label for="option">Cartão de Crédito</label>
+                <input type="radio" name ="option" id="option">
+                <label for="option">Boleto</label>
+
+                <button class="botao" type="submit">Enviar Pedido</button>
+                </div>
+            </fieldset>
+        </form>
+    </div>
+
+
+    
+</body>
+</html>
