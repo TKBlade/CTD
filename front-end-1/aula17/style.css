@@ -1,0 +1,103 @@
+* {
+
+    margin:0;
+    padding:0;
+    box-sizing: 0;
+
+}
+
+body {
+
+    background-color: #181818;
+
+}
+
+main {
+
+    height: 100vh;
+    display:flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    gap:20px;
+}
+
+.video:hover {
+
+    transform: scale(1.02);
+    filter: brightness(120%);
+
+}
+
+.page-title {
+
+    color: rgb(255, 255, 255);
+    height: 20vh;
+    display:flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+
+}
+
+.page-description {
+
+    color: rgb(236, 54, 78);
+    align-items: center;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    flex-wrap: column;
+
+}
+
+.videos {
+
+    height: 30vh;
+    display:flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    gap:10px;
+
+}
+
+.video {
+
+    width: 25%;
+    height: fit-content;
+    margin-top: 10px;
+    padding: 20px 15px;
+    transition: .5s ease-in-out;
+    cursor: pointer;
+
+}
+
+.thumbnail {
+
+    width: 100%;
+
+}
+
+.video-title {
+
+    margin: 8px 0 12px;
+    color: white;
+
+}
+
+.video-views {
+
+    color: rgba(255, 255, 255, 0.6);
+    margin-top: 12px;
+    display: block;
+
+}
+
+.video-date {
+
+    text-align: right;
+    display: block;
+    color: rgba(255, 255, 255, 0.4); font-size: 12px;
+
+}
