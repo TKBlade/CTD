@@ -1,0 +1,18 @@
+div {
+
+    background-color: aqua;
+    height: 300px;
+    width: 300px;
+    
+}
+
+/* altura maxima: ele se estiliza abaixo da medida ou altura minima: abaixo da medida ele perde estilizaçai
+
+@media (max-width: 450px) {
+
+    div {
+
+        width: 100%;
+    }
+
+}

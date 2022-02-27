@@ -1,0 +1,26 @@
+body {
+
+    background: url(http://inebur.com/horn/email/img/bgbody.png) repeat center center fixed; background-color:#5c65ae
+}
+c
+ {
+
+    background-color: rgb(32, 30, 30);
+    color: rgb(233, 230, 225);
+}
+
+h1 {
+    color: indigo;
+}
+
+h2 {
+    color: indigo;
+}
+
+.job-title {
+    background-color: indigo; text-align: center; color: ivory; font-size: large;
+}
+
+.ac_box { width: 200px; }
+.ac_box_top { border: 2px solid #E6E6E6; border-bottom: none; margin-left: 2px; height: 7px; width: 323px; }
+.ac_box_cont { border-left: 4px solid #E6E6E6; border-right: 10px solid #E6E6E6; border-bottom: 10px solid #E6E6E6; height: 340px; padding: 5px 0; }
