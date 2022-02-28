@@ -1,0 +1,495 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CTD Summer Week - Front end I</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap">
+</head>
+<body>
+
+    <div class="container-fluid bg-black">
+
+        <!-- 
+            Barra de Navegação
+            Utilizaremos o componente navbar do Bootstrap.
+        -->
+        <div class="container">
+            <div class="row">
+
+                <!--
+                    Toda aplicação esta sendo projetada para que seja 
+                    otimizado o código fonte para dispositivos mobile.
+
+                    Sendo assim a primeira configuração de colunas será 
+                    responsável pela abordagem mobile.
+                -->
+                <div class="col-12">
+
+                    <nav class="navbar navbar-expand-lg my-2">
+                        <a class="navbar-brand" href="#">
+                            <img src="../images/logo-primary.svg" width="140" height="40" alt="Logo vertical da Digital House">
+                        </a>
+                        <button 
+                            class="navbar-toggler text-white" 
+                            type="button" 
+                            data-toggle="collapse" 
+                            data-target="#collapseNavegacaoPrincipal" 
+                            aria-controls="collapseNavegacaoPrincipal" 
+                            aria-expanded="false" 
+                            aria-label="Botão para alterna a visualização da navegação"
+                        >
+                            <i class="fas fa-bars"></i>
+                        </button>
+                      
+                        <div class="collapse navbar-collapse" id="collapseNavegacaoPrincipal">
+                            <ul class="navbar-nav mr-auto">
+                                <li class="nav-item dropdown">
+                                    <a 
+                                        class="nav-link dropdown-toggle text-gray" 
+                                        href="#" 
+                                        id="navbarDropdown" 
+                                        role="button" 
+                                        data-toggle="dropdown" 
+                                        aria-haspopup="true" 
+                                        aria-expanded="false"
+                                    >
+                                        Programas
+                                    </a>
+                                    <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                                        <a class="dropdown-item text-gray" href="#">Ação</a>
+                                        <a class="dropdown-item text-gray" href="#">Outra ação</a>
+                                    </div>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link text-gray" href="#">Para Empresas</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link text-gray" href="#">Sobre nós</a>
+                                </li>
+                            </ul>
+                        </div>
+                      </nav>
+
+                </div>
+
+            </div>
+        </div>
+
+    </div>
+
+    <div class="container-fluid bg-dark">
+        <div class="container">
+            <div class="row">
+
+
+                <div class="col-12">
+
+                    <!--
+                        Estruturas semânticas tem como objetivo dá sentido 
+                        a estruturação de dados. No caso, utilizamos a tag <article>
+                        como o objetivo de sinalizar que se trata de um bloco de texto
+                        que representa o conteúdo da página atual.
+
+                        Não existe nenhum impedimento para uso de outras tag(s) e por vezes
+                        o uso ou não delas será meramente interpretativo.
+                    -->
+                    <article class="py-5 text-white">
+                        <h1 class="h1">A <span class="rounded bg-color1 px-2">formação</span> que define o seu destino</h1>
+                        <p class="lead mb-5">Transformando vidas por meio da tecnologia</p>
+                        <a class="btn btn-lg btn-color1 btn-block" href="/">Conheça nossos cursos</a>
+                    </article>
+
+                </div>
+
+                <div class="col-12">
+
+                    <img class="rounded mb-5" src="../images/9611210f-6fcb-4791-a97a-49aaf6c23666_home-hero.jpeg" width="100%" alt="Mulher negra com fonte de ouvido interagindo com notebook no colo">
+
+                </div>
+                
+
+            </div>
+        </div>
+    </div>
+
+    <div class="container-fluid bg-black">
+        <div class="container">
+            <div class="row">
+
+                <div class="col-12">
+
+                    <article class="py-5 text-white">
+                        <h1 class="h3 text-center">Transforme a sua carreira com quem acredita e apoia sua jornada!</h1>
+    
+                        <!--
+    
+                            Escolhi trabalhar com flexbox
+                            e o componente btn do Bootstrap.
+    
+                        -->
+                        <div class="d-flex flex-wrap my-5">
+
+                            <a class="btn btn-color3 flex-grow-1 p-5 m-1" href="#">
+                                <h2 class="h6 text-white text-center mb-0">Dados</h2>
+                            </a>
+                            
+                            <a class="btn btn-color2 flex-grow-1 p-5 m-1" href="#">
+                                <h2 class="h6 text-white text-center mb-0">Experiência de usuário UX</h2>
+                            </a>
+                            
+                            <a class="btn btn-color4 flex-grow-1 p-5 m-1" href="#">
+                                <h2 class="h6 text-white text-center mb-0">Marketing Digital</h2>
+                            </a>
+                                
+                            <a class="btn btn-color5 flex-grow-1 p-5 m-1" href="#">
+                                <h2 class="h6 text-white text-center mb-0">Programação</h2>
+                            </a>
+
+                        </div>
+                        
+                        <div class="text-center">
+                            <a class="btn btn-outline-light" href="">Veja outros cursos</a>
+                        </div>
+
+                    </article>
+                    
+                </div>
+
+            </div>
+        </div>
+    </div>
+
+    <div class="container-fluid">
+        <div class="container">
+
+            <div class="row pt-5 pb-3">
+                <div class="col-12">
+                    <img class="rounded" src="../images/e4b34699-9c23-4946-aef6-9051e0328ec2_home-clases-online.jpeg" width="100%" alt="Mulher loira sentada a mesa interagindo com nootebook">
+                </div>
+                <div class="col-12">
+                    <article class="py-4">
+                        <h1 class="h3">Aulas on-line e ao vivo!</h1>
+                        <p class="lead text-gray">Ambiente dinâmico e prático de aprendizado, estimulando a troca de experiências e interação entre professores e colegas.</p>
+                    </article>
+                </div>
+            </div>
+
+            <div class="row py-3">
+                <div class="col-12">
+                    <img class="rounded" src="../images/b0d93aad-4f2c-4bbb-a9c7-6cc5e9528de8_home-foco.jpeg" width="100%" alt="Adolescente negra sorridente sentada a mesa de uma praça de alimentação interagindo com nootebook">
+                </div>
+                <div class="col-12">
+                    <article class="py-4">
+                        <h1 class="h3">Desenvolvimento Profissional</h1>
+                        <p class="lead text-gray">Acesso a conteúdos exclusivos de carreiras e vagas de trabalho em diversas empresas no mercado.</p>
+                    </article>
+                </div>
+            </div>
+
+            <div class="row pt-3 pb-3">
+                <div class="col-12">
+                    <img class="rounded" src="../images/ee67f4c3-07ed-4a39-919a-c6f49e27849d_home-desarrollo.jpeg" width="100%" alt="Homem negro sentado na sacada da janela realizando anotações em um caderno">
+                </div>
+                <div class="col-12">
+                    <article class="py-4">
+                        <h1 class="h3">O foco é você</h1>
+                        <p class="lead text-gray">Acompanhamento personalizado para que você tenha acesso ao que precisa aprender</p>
+                    </article>
+                </div>
+            </div>
+
+        </div>
+    </div>
+
+    <div class="container-fluid bg-dark">
+        <div class="container">
+            <div class="row">
+                <div class="col-12">
+
+                    <article class="py-5">
+                        <h1 class="h3 text-center text-white mb-5">Próximas Turmas</h1>
+                        
+                        <div class="card">
+                            <section class="p-4">
+                                <h2 class="h4 font-weight-bold text-color4">Marketing Digital Avançado</h2>
+                                <p class="lead">31 jan - 3 ago</p>
+                                <p>Seg - Qua - Sex</p>
+                                <p>08h30 às 10h00</p>
+                                <a class="btn btn-block btn-color4 text-white" href="">Inscreva-se</a>
+                            </section>
+                        </div>
+                    </article>
+
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="container-fluid">
+        <div class="container">
+            <div class="row">
+
+                <div class="col-12">
+
+                    <article class="py-5">
+                        <h1 class="h3 text-center mb-5">Perguntas Frequentes</h1>
+    
+                        <!-- 
+    
+                            Nesse exemplo utilizaremos um componente bastante comum 
+                            em projetos web, trata-se do componenter collapse.
+                            Ele utiliza comportamentos Javascript, portanto sua documentação
+                            aborda maneiras de se manipular seus comportamentos através
+                            de um API do Bootstrap.
+    
+                        -->
+    
+                        <div class="accordion" id="accordionPerguntasFrequentes">
+    
+                            <!-- 
+
+                                Item do accordion com pergunta e resposta.
+                                O recurso vem por padrão no Bootstrap e pode ser personalizado 
+                                de acordo com a necessidade.
+
+                            -->
+                            <div class="border-bottom">
+                                <div id="headingOne">
+                                    <h5 
+                                        class="font-weight-bold py-3 mb-0" 
+                                        data-toggle="collapse" 
+                                        data-target="#collapseOne" 
+                                        aria-expanded="false" 
+                                        aria-controls="collapseOne"
+                                    >
+                                        Como são as aulas em formato remoto?
+                                    </h5>
+                                </div>
+                          
+                                <div 
+                                    class="collapse" 
+                                    id="collapseOne" 
+                                    aria-labelledby="headingOne" 
+                                    data-parent="#accordionPerguntasFrequentes"
+                                >
+                                    <div>
+                                        <p>Proporcionamos um ambiente dinâmico e prático de aprendizado, estimulando a troca de experiências e interação entre professores e colegas. As aulas são 100% ao vivo, com 2 professores (generalista e assistente) e até 50 alunos por turma.</p>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <!-- 
+
+                                Outro item do accordion com pergunta e resposta.
+
+                            -->
+                            <div class="border-bottom">
+                                <div id="headingTwo">
+                                    <h5 
+                                        class="font-weight-bold py-3 mb-0" 
+                                        data-toggle="collapse" 
+                                        data-target="#collapseTwo" 
+                                        aria-expanded="false" 
+                                        aria-controls="collapseTwo"
+                                    >
+                                        Quais são os dias e horários dos cursos?
+                                    </h5>
+                                </div>
+                          
+                                <div 
+                                    class="collapse" 
+                                    id="collapseTwo" 
+                                    aria-labelledby="headingTwo" 
+                                    data-parent="#accordionPerguntasFrequentes"
+                                >
+                                    <div>
+                                        <p>Para consultar o dia e horário disponíveis para as próximas turmas, selecione o curso desejado no menu Programas.</p>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <!-- 
+
+                                Outro item do accordion com pergunta e resposta.
+
+                            -->
+                            <div class="border-bottom">
+                                <div id="headingThree">
+                                    <h5 
+                                        class="font-weight-bold py-3 mb-0" 
+                                        data-toggle="collapse" 
+                                        data-target="#collapseThree" 
+                                        aria-expanded="false" 
+                                        aria-controls="collapseThree"
+                                    >
+                                        Quanto tempo precisarei dedicar aos estudos?
+                                    </h5>
+                                </div>
+                          
+                                <div 
+                                    class="collapse" 
+                                    id="collapseThree" 
+                                    aria-labelledby="headingThree" 
+                                    data-parent="#accordionPerguntasFrequentes"
+                                >
+                                    <div>
+                                        <p>Todos os cursos da Digital House são intensivos, isso quer dizer que você aprende muitas habilidades digitais em pouco tempo. Por isso, para aproveitar bem o curso, você terá de praticar também fora do horário de aula, realizando tarefas e trabalhando em projetos para o desenvolvimento do seu currículo.</p>
+                                    </div>
+                                </div>
+                            </div>
+    
+                        </div>
+    
+                    </article>
+
+                </div>
+
+            </div>
+        </div>
+    </div>
+
+    <div class="container-fluid bg-black">
+        <div class="container">
+            <div class="row">
+
+                <div class="col-12">
+                    
+                    <section class="text-gray py-5">
+                        <h1 class="h6 text-uppercase">Links úteis</h1>
+                        <ul class="list-unstyled d-flex flex-column p-0">
+                            <li class="py-1">
+                                <a class="text-gray" href="">Benefícios</a>
+                            </li>
+                            <li class="py-1">
+                                <a class="text-gray" href="">Perguntas frequentes</a>
+                            </li>
+                            <li class="py-1">
+                                <a class="text-gray" href="">Trabalhe conosco</a>
+                            </li>
+                            <li class="py-1">
+                                <a class="text-gray" href="">Fale conosco</a>
+                            </li>
+                            <li class="py-1">
+                                <a class="text-gray" href="">Termos e condições</a>
+                            </li>
+                            <li class="py-1">
+                                <a class="text-gray" href="">Política de privacidade</a>
+                            </li>
+                        </ul>
+                    </section>
+
+                </div>
+
+                <div class="col-12">
+
+                    <section class="text-gray py-3">
+                        <h1 class="h6 text-uppercase">Comunidade Digital House</h1>
+                        <ul class="list-unstyled d-flex flex-column p-0">
+                            <li class="py-1">
+                                <a class="text-gray" href="">DH Blog</a>
+                            </li>
+                            <li class="py-1">
+                                <a class="text-gray" href="">Webinar</a>
+                            </li>
+                            <li class="py-1">
+                                <a class="text-gray" href="">Sobre Digital House</a>
+                            </li>
+                        </ul>
+                    </section>
+
+                </div>
+
+                <div class="col-12">
+
+                    <ul class="list-unstyled d-flex flex-column p-0">
+                        <li class="py-1">
+                            <a class="text-gray" href="">Escolas DH Schools</a>
+                        </li>
+                    </ul>
+
+                </div>
+
+                <div class="col-12">
+
+                    <section class="text-gray py-5">
+                        <h1 class="h6 text-uppercase">Fique por dentro das novidades</h1>
+                        <p>As últimas notícias e recursos sobre habilidades digitais.</p>
+                        <form action="">
+                            <div class="form-group">
+                                <label class="sr-only" for="emailNewslatter">E-mail</label>
+                                <input class="form-control" id="emailNewslatter" type="text" placeholder="Digite seu e-mail">
+                            </div>
+                            <button class="btn btn-block btn-color1">Inscreva-se</button>
+                        </form>
+                    </section>
+
+                </div>
+
+                <div class="col-12">
+
+                    <div class="border-top py-3">
+                        <nav class="nav my-3">
+                            <a class="nav-item mr-3" href="">
+                                <i class="fab fa-instagram h3 text-gray"></i>
+                                <span class="sr-only">Logo do Instagram</span>
+                            </a>
+                            <a class="nav-item mx-3" href="">
+                                <i class="fab fa-facebook h3 text-gray"></i>
+                                <span class="sr-only">Logo do Facebook</span>
+                            </a>
+                            <a class="nav-item mx-3" href="">
+                                <i class="fab fa-linkedin h3 text-gray"></i>
+                                <span class="sr-only">Logo do Linkedin</span>
+                            </a>
+                            <a class="nav-item mx-3" href="">
+                                <i class="fab fa-twitter h3 text-gray"></i>
+                                <span class="sr-only">Logo do Twitter</span>
+                            </a>
+                        </nav>
+                        <footer class="my-3">
+                            <span class="text-gray">© 2022 Digital House</span>
+                        </footer>
+                    </div>
+
+                </div>
+
+            </div>
+        </div>
+    </div>
+
+
+
+    <!-- 
+    
+        Nota: Como objetivo é trabalhar apenas com a personalização dos estilos 
+        da aplicação, resolvi inserir a camada de comportamento (pacotes de jQuery e Popper.js) via CDN.
+
+    -->
+    <script 
+        crossorigin="anonymous" 
+        integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+        src="https://code.jquery.com/jquery-3.3.1.slim.min.js"></script>
+    <script 
+        crossorigin="anonymous" 
+        integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49"
+        src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js"></script>
+    <script 
+        crossorigin="anonymous"
+        src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" 
+        integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy"></script>
+    
+    <!--
+
+        Nota: É necessário criar uma conta no site Font Awesome e gerar um Token
+        para utilizar o ícones no projeto.
+
+    -->
+    <script 
+        crossorigin="anonymous"
+        src="https://kit.fontawesome.com/9e1d83a9d2.js"></script>
+
+</body>
+</html>

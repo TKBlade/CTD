@@ -1,0 +1,24 @@
+{
+  "name": "ctd-imperativa-aula17",
+  "version": "1.0.0",
+  "description": "Aula 17 sobre Express",
+  "main": "index.js",
+  "scripts": {
+    "iniciar": "nodemon index.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/wssantanna/ctd-imperativa-aula17.git"
+  },
+  "author": "Willian Sant Anna",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/wssantanna/ctd-imperativa-aula17/issues"
+  },
+  "homepage": "https://github.com/wssantanna/ctd-imperativa-aula17#readme",
+  "devDependencies": {},
+  "dependencies": {
+    "express": "^4.17.1"
+  }
+}

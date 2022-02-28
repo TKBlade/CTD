@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home</title>
+
+    <!-- Estilos da View -->
+
+    <style>
+
+        body {
+            box-sizing: border-box;
+            font-family: Arial, Helvetica, sans-serif;
+            padding: 0;
+            margin: 0;
+        }
+
+        .conteudo {
+            border: 1px solid lightseagreen;
+            border-radius: 5px;
+            background-color: lightblue;
+            margin: 50px auto;
+            max-width: 480px;
+            padding: 25px;
+        }
+
+        .conteudo__titulo {
+            color: royalblue;
+            text-align: center;
+        }
+
+        .conteudo__subtitulo {
+            text-align: center;
+        }
+
+        .botao {
+            background-color: blueviolet;
+            border: none;
+            border-radius: 5px;
+            color: white;
+            display: block;
+            font-weight: 700;
+            text-decoration: none;
+            padding: 10px 25px;
+            margin: 25px auto 0;
+        }
+
+        .botao:hover {
+            background-color: blue;
+            transition: background-color;
+            transition-duration: 0.5s;
+        }
+
+        .botao:active {
+            background-color: orangered;
+            transform: scale(0.95);
+            transition: all;
+            transition-duration: 0.2s;
+        }
+
+        .conteudo__rodape {
+            font-size: 12px;
+            margin-top: 25px;
+            text-align: center;
+        }
+
+    </style>
+</head>
+<body>
+
+    <!-- View (Visualização): Todo Html representa a View -->
+
+    <main class="conteudo">
+        <h1 class="conteudo__titulo">Esta é uma página HTML enviada pelo Nodejs</h1>
+        <p class="conteudo__subtitulo">Para ser redirecionado para o Google <button class="botao" onclick="redirecionarParaPaginaDoGoogle()">Clique aqui</button></p>
+        <footer class="conteudo__rodape">2021 - Willian Sant Anna</footer>
+    </main>
+
+    <!-- Controller (Controlador) -->
+
+    <script type="text/javascript">
+
+        function redirecionarParaPaginaDoGoogle() {
+
+            var confirmarInteresseEmVisitarAPaginaGoogle = window.confirm('Tem certeza que deseja ser redirecionado?');
+
+            if(confirmarInteresseEmVisitarAPaginaGoogle)
+                window.location.href = 'http://www.google.com.br';
+            else
+                alert('Muito obrigado. Você pode visitar a página no momento que desejar.');
+        }
+
+    </script>
+
+</body>
+</html>

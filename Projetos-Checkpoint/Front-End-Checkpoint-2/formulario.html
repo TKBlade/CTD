@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> Formulário</title>
+    <link rel="stylesheet" href="forms.css">
+
+</head>
+<body>
+
+<header>
+    <div>
+        <h1> Deixe suas informações de contato: </h1>
+    </div>
+    
+</header>
+
+<main>
+
+    <form>
+
+        <fieldset class="dados">
+            <legend> Dados Pessoais</legend>
+
+             <div>
+                <label for="name">Nome: </label>
+                <input type="name" maxlengh="20" nome="name" id="name" placeholder="Digite seu nome">
+            </div>
+    
+            <div>
+                <label for="email">Email: </label>
+                <input type="email" nome="email" id="email" placeholder="email@email.com">
+            </div>
+             
+            <div>
+                <label for="telefone">Telefone: </label>
+                <input type="telefone" maxlengh = "16" nome="telefone" id="telefone" placeholder="(00) 0 0000-0000)">
+            </div>
+
+             <div>
+                <label for="datanascimento"> Data de nascimento: </label>
+                <input type="datanascimento" maxlengh = "10" nome="datanascimento" id="datanascimento" placeholder="00/00/0000">
+            </div>
+        </fieldset>
+
+        <fieldset class="maior"> 
+            <legend> Você é maior de idade?</legend>
+            <div>
+                <label for="sim">
+                    <input type="radio" name="sim" value="sim" id="sim"> Sim</label>
+                <label for="nao">
+                    <input type="radio" name="sim" value="nao" id="nao"> Não</label>
+            </div>
+        </fieldset>
+
+        <fieldset class="interesse-conhecer">
+            <legend> Quais pontos você tem interesse em conhecer? </legend>
+            <select name="interesse-conhecer" id="interesse-conhecer">
+                <option disabled selected value> -- selecione uma opção -- </option>
+                <option value="1">Morro das Cruzes</option>
+                <option value="2">Parque Nacional das Araucárias</option>
+                <option value="3">Cachoeira do Vicensi</option>
+                <option value="4">Café na Apreciati</option>
+                <option value="5">Visitar a família</option>
+            </select>
+        </fieldset>
+
+        <fieldset class="interesse-cidade">
+            <legend> Quais os seus interesses na cidade? </legend>
+            <label for="turista">
+                <input type="radio" name="turista" value="turista" id="turista"> Turista</label>
+            <label for="residente">
+                <input type="radio" name="residente" value="residente" id="residente"> Residente</label>
+            <label for="estudante">
+                <input type="radio" name="estudante" value="estudante" id="estudante"> Estudante</label>
+        </fieldset>
+
+        <div class="botao">
+            <button id="enviar" type="submit">Enviar!</button>
+            <button id="limpar" type="reset">Limpar dados</button>
+        </div>
+
+    </form>
+</main>
+
+</body>
+</html>

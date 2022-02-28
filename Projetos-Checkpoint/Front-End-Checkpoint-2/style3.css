@@ -1,0 +1,296 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Berkshire+Swash&display=swap');
+
+* {
+
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+
+}
+
+
+body {
+
+    font-family: 'Lato', sans-serif, Arial, Helvetica, sans-serif;
+    display: grid;
+    grid-template-columns: 200px 1fr;
+    grid-template-areas: 
+    'header header'
+    'main main'
+    'footer footer';
+
+}
+
+a {
+    display: inline-block;     
+    position: relative;    
+    z-index: 1;     
+    padding: 2em;     
+    margin: -2em;
+} 
+
+ul {
+    list-style-type: none;
+    }
+
+body header {
+
+    background-color: #0AA1DE;
+    height: 130px;
+    grid-area: header;
+    text-align: center;
+    padding: 20px;
+    position: sticky;
+    top: 0;
+    z-index: 20;
+    
+
+}
+
+body header li {
+    background-color:white;
+    margin: 15px;
+    padding: 20px 29px;
+    z-index: 100;
+    font-size: 14px;
+    font-weight: bold;
+    text-align: center;
+    border-style: none;
+    cursor: pointer;
+}
+
+body header a{
+    color:black;
+    text-decoration: none;
+}
+
+header li:hover{
+    background-color: #009040;
+    transition-duration: .3s;
+    transition-timing-function: ease-in-out;
+}
+
+header ul{
+    list-style-type: none;
+    display: flex;
+    gap: 20px;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: flex-end;
+  
+}
+
+
+
+.brasao{
+    position:absolute;
+    z-index: 200;
+    left:143px;
+    top:44px;
+    z-index: 20;
+}
+
+.banner {
+    height: 430px;
+    background-image: url("imagens/araucarias.png");
+    padding: 10px;
+    position: center;
+    left: 0px;
+    top: 0px;
+    grid-area: main;
+}
+
+h1{
+    background-color: rgba(0, 0, 0, 0.486);
+    font-size: 105px;
+    font-family: 'Berkshire Swash', cursive, Arial, Helvetica, sans-serif;
+    color:white;
+    align-content: center;
+    top:80px;
+    grid-area: main;
+    }
+
+body main {
+
+    background: linear-gradient(to bottom,#36C1F5, #7636F5);grid-area: main;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    padding: 80px;
+    gap: 12px;
+
+}
+
+body main section h1 {
+
+    padding: 20px;
+
+}
+
+body main section p {
+
+    padding: 20px;
+}
+
+.sobre1{
+    width: 600px;
+    height: 330px;
+    margin: 30px;
+    box-sizing: border-box;
+    font-size:14px;
+    color: black;
+    float: left;
+}
+
+.sobre2{
+    width: 600px;
+    height: 330px;
+    margin: 30px;
+    font-size:14px;
+    color: black;
+    float: right;
+}
+
+body section img{
+
+    min-width: 100%;
+
+}
+
+body section {
+
+    background-color: white;
+    height: fit-content;
+    text-align: center;
+
+}
+
+body footer {
+
+    grid-area: footer;
+    height: 170px;
+    text-align: center;
+    padding: 20px;
+    background-color:#0AA1DE;
+    display: inline;
+
+}
+
+.oquefazer{
+    height: 424px;
+    background-color:#0AA1DE;
+    color: white;
+    font-size: 20px;
+    position: relative;
+    z-index: 2;
+}
+
+.titulo{
+    font-size: 28px;
+    color: white;
+    padding:20px;
+    box-sizing: border-box;
+    position:relative;
+    left: 40px;
+}
+
+h4{
+    font-size:72px;
+    padding:0;
+    margin: 0;
+}
+
+.primeiro{
+    width: 187px;
+    height: 143px;
+    color: white;
+    padding:0;
+    margin: 0;
+    position: relative;
+    left: 70px;
+    top: 20px;
+    z-index: 130;
+}
+
+.segundo{
+    width: 187px;
+    height: 143px;
+    color: white;
+    padding:0;
+    margin: 0;
+    position: relative;
+    left: 327px;
+    top: -123px;
+    z-index: 130;
+}
+
+.terceiro{
+    width: 187px;
+    height: 143px;
+    color: white;
+    padding:0;
+    margin: 0;
+    position: relative;
+    left: 584px;
+    top: -266px;
+    z-index: 130;
+}
+
+.quarto{
+    width: 187px;
+    height: 143px;
+    color: white;
+    padding:0;
+    margin: 0;
+    position: relative;
+    left: 841px;
+    top: -409px;
+    z-index: 130;
+}
+
+.quinto{
+    width: 187px;
+    height: 143px;
+    color: white;
+    padding:0;
+    margin: 0;
+    position: relative;
+    left: 1098px;
+    top: -552px;
+    z-index: 130;
+}
+
+.titulo2{
+    font-size: 24px;
+    margin: 30px;
+}
+
+.curiosidades{
+    color: black;
+    font-size: 18px;
+    text-align: center;
+}
+
+.video{ 
+    margin: 30px;
+    top: 30px;
+}
+
+.textorodape{
+    color: white;
+    float: left;
+    margin-left:200px;
+    width: 300px;
+}
+
+.saibamais{
+    family: 'Lato', sans-serif, Arial, Helvetica, sans-serif;
+    color: white;
+    margin:20px;
+}
+
+.links {
+    padding: 10px;
+}
